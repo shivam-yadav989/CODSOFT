@@ -1,0 +1,59 @@
+:root {
+    --primary: #007bff;
+    --dark: #1a1a1a;
+    --light: #f8f9fa;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+html { scroll-behavior: smooth; }
+
+header { position: fixed; width: 100%; background: #fff; padding: 1rem 8%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 15px rgba(0,0,0,0.1); z-index: 1000; }
+.logo { font-size: 1.5rem; font-weight: 700; }
+.logo span { color: var(--primary); }
+.nav-links { list-style: none; display: flex; gap: 2rem; }
+.nav-links a { text-decoration: none; color: var(--dark); font-weight: 500; }
+
+.hero {
+    min-height: 80vh; /* 100 ki jagah 80 kar do */
+    display: flex;
+    align-items: center;
+    padding: 60px 8%; /* Top aur bottom padding thodi badha do */
+    background: var(--light);
+}
+.hero-text h1 { font-size: 3.5rem; margin: 10px 0; }
+.hero-text p span { color: var(--primary); font-weight: 600; }
+
+.btn { padding: 12px 30px; background: var(--primary); color: #fff; text-decoration: none; border-radius: 5px; display: inline-block; transition: 0.3s; margin-top: 20px; }
+.btn-outline { background: transparent; border: 2px solid var(--primary); color: var(--primary); margin-left: 10px; }
+
+.about-section {
+    padding: 60px 8%; /* 100 se 60 kar diya */
+    background: #fff;
+}
+.about-container { display: flex; align-items: center; gap: 50px; flex-wrap: wrap; }
+.about-img img { width: 300px; border-radius: 20px; box-shadow: 15px 15px 0 var(--primary); }
+
+.skills-list { display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0; }
+.skill-badge { padding: 5px 15px; background: #eef5ff; color: var(--primary); border-radius: 50px; border: 1px solid var(--primary); font-size: 0.8rem; }
+
+/* PROJECT IMAGE FIX - Punarva Control */
+.projects-section { padding: 80px 8%; background: var(--light); text-align: center; }
+.projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
+.project-card { background: #fff; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+
+.project-img { width: 100%; height: 200px; overflow: hidden; border-bottom: 1px solid #eee; }
+.project-img img { width: 100%;
+    height: 100%;
+    object-fit: contain; /* 'cover' ki jagah 'contain' try karo agar poori image dikhani hai */
+    background-color: #f0f0f0; }
+.project-card:hover img { transform: scale(1.1); }
+
+.project-info { padding: 20px; }
+.btn-small { padding: 8px 20px; background: var(--primary); color: #fff; text-decoration: none; border-radius: 5px; font-size: 0.8rem; }
+
+.contact-section { padding: 80px 8%; text-align: center; background: var(--dark); color: #fff; }
+.contact-links { margin-top: 30px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+.contact-item { color: #fff; text-decoration: none; border: 1px solid #fff; padding: 10px 25px; border-radius: 5px; transition: 0.3s; }
+.contact-item:hover { background: #fff; color: var(--dark); }
+
+footer { margin-top: 50px; color: #777; font-size: 0.8rem; }
