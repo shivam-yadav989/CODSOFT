@@ -13,7 +13,9 @@ This repository contains all the tasks completed during my Web Development inter
    - Features: Responsive layout, Project gallery, and Internship ID.
    - [View Code](./Portfolio/)
 
-3. **Task 3: Temperature Converter** (Upcoming)
+3. **Task 3: Professional Calculator** 
+   - Features: Glassmorphism UI, Responsive Design, and Arithmetic Logic.
+   - [View Code](./Calculator/)
 
 ---
 **Intern Name:** Shivam Yadav
